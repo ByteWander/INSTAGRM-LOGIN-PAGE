@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-2.png" alt="Instagram Logo" class="instagram-logo">
+        <form id="loginForm" onsubmit="submitForm(event)">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Log In</button>
+        </form>
+        
+        <div class="additional-links">
+            <a href="#" onclick="forgotPassword()">Forgot Password?</a>
+            <span>|</span>
+            <a href="#" onclick="signUp()">Sign Up</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
